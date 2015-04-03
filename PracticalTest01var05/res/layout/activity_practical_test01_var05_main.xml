@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  tools:context="ro.pub.cs.systems.pdsd.practicaltest01.PracticalTest01Var05MainActivity" >
+
+    <Button
+      android:id="@+id/north_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+      android:text="@string/north_button" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+		android:baselineAligned="false" >
+ 
+	  <ScrollView
+	      android:layout_width="0dp"
+	      android:layout_height="wrap_content"
+	      android:layout_weight="1">
+	      
+       <Button
+        android:id="@+id/west_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/west_button" />
+       </ScrollView>
+ 
+	   <ScrollView
+	      android:layout_width="0dp"
+	      android:layout_height="wrap_content"
+	      android:layout_weight="1">
+	  
+     <Button
+        android:id="@+id/east_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/east_button" />
+     </ScrollView>
+ 
+  </LinearLayout>
+  
+	
+	 <Button
+      android:id="@+id/south_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="@string/south_button" />
+   
+	 
+	<EditText
+	    android:id="@+id/main_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:enabled="false"
+	    android:inputType="text"
+	    android:gravity="center" />
+	 
+	 
+	  <Button
+      android:id="@+id/navigate_sec_activity_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="@string/navigate_sec_activity_button" />
+	 
+    
+</LinearLayout>
